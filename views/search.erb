@@ -1,0 +1,28 @@
+<!-- 첫번째 방법 -->
+<form action="https://www.google.com/search">
+    Google <input type="text" name="q">
+    <input type="submit" value="검색">
+    <br>
+</form>
+
+<form action="https://search.naver.com//search.naver">    
+    Naver <input type="text" name="query">
+    <input type="submit" value="검색">
+</form>
+
+
+<!-- 두번째 방법 -->
+<form method="POST">
+    <input type="hidden" name="engine" value="google">
+    <input type="text" name="q" placeholder="Google 검색">
+    <input type="submit" value="검색">
+</form>
+
+<form method="POST">
+    <input type="hidden" name="engine" value="naver">
+    <input type="text" name="query" placeholder="Naver 검색">
+    <input type="submit" value="검색">
+</form>
+
+
+
